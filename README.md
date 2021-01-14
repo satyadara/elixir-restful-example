@@ -1,21 +1,19 @@
-# Zelda
+# Zelda - Elixir Restful Example
 
-**TODO: Add description**
+## Pre-run
+Install Elixir and Erlang
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `zelda` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:zelda, "~> 0.1.0"}
-  ]
-end
+## Install Dependencies
+```
+mix deps.get
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/zelda](https://hexdocs.pm/zelda).
+## Run Project
+```
+mix run --no-halt
+```
 
+## Run Test
+```
+mix test --no-start
+```
