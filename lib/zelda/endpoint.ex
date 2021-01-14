@@ -11,12 +11,8 @@ defmodule Zelda.Endpoint do
     send(conn, :ok, @database)
   end
 
-  get "/priority" do
-    send(conn, :ok, %{"message" => "This is Priority!"})
-  end
-
-  get "/:index" do
-    send(conn, :ok, index)
+  get "/:id" do
+    send(conn, :ok, @database |> Enum.filter(fn it -> String.to_integer(id) == it["id"] end))
   end
 
   get _ do
